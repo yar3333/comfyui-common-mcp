@@ -1,4 +1,4 @@
-# comfyui-mcp-server-node
+# comfyui-common-mcp
 
 _This is improved node.js version of Joe Norton's python project (https://github.com/joenorton/comfyui-mcp-server)._
 
@@ -22,7 +22,7 @@ No local clone needed. Add to your MCP client configuration (Cursor, Claude, etc
 ```json
 "comfyui": {
   "command": "npx",
-  "args": ["-y", "comfyui-mcp-server-node"],
+  "args": ["-y", "comfyui-common-mcp"],
   "env": {
     "COMFYUI_URL": "http://localhost:8188",
     "COMFY_MCP_WORKFLOW_DIR": "/path/to/workflows",
@@ -36,8 +36,8 @@ No local clone needed. Add to your MCP client configuration (Cursor, Claude, etc
 ### Option 2: Local development
 
 ```bash
-git clone https://github.com/yar3333/comfyui-mcp-server-node.git
-cd comfyui-mcp-server-node
+git clone https://github.com/yar3333/comfyui-common-mcp.git
+cd comfyui-common-mcp
 npm install
 npm run build
 ```
@@ -129,7 +129,7 @@ npm test
 ## Project Structure
 
 ```
-comfyui-mcp-server-node/
+comfyui-common-mcp/
 ├── src/
 │   ├── comfyui_client.ts        # HTTP client for ComfyUI API
 │   ├── asset_processor.ts       # Image processing utilities

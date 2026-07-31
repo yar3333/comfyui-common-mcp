@@ -1,11 +1,11 @@
 {
-  "name": "comfyui-mcp-server-node",
+  "name": "comfyui-common-mcp",
   "version": "2.1.1",
   "description": "MCP server that bridges AI agents to local ComfyUI instance",
   "main": "dist/server.js",
   "types": "dist/server.d.ts",
   "bin": {
-    "comfyui-mcp-server-node": "./dist/server.js"
+    "comfyui-common-mcp": "./dist/server.js"
   },
   "files": [
     "dist",
@@ -30,7 +30,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yar3333/comfyui-mcp-server-node"
+    "url": "https://github.com/yar3333/comfyui-common-mcp"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.0.0",

@@ -20,7 +20,7 @@ const COMFYUI_URL = process.env.COMFYUI_URL || "http://localhost:8188";
 
 function printStartupBanner(): void {
   console.log("\n" + "=".repeat(70));
-  console.log("[*] ComfyUI-MCP-Server-node".padStart(35).padEnd(70));
+  console.log("[*] comfyui-common-mcp".padStart(35).padEnd(70));
   console.log("=".repeat(70));
   console.log(`  ComfyUI URL: ${COMFYUI_URL} (connection on first tool use)`);
   console.log(`  Workflow directory: ${WORKFLOW_DIR}`);

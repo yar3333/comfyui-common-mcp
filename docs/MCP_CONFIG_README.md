@@ -11,9 +11,9 @@ Cursor connects to the MCP server via stdio. The server process is automatically
 ```json
 {
   "mcpServers": {
-    "comfyui-mcp-server-node": {
+    "comfyui-common-mcp": {
       "command": "node",
-      "args": ["/path/to/comfyui-mcp-server-node/dist/server.js"],
+      "args": ["/path/to/comfyui-common-mcp/dist/server.js"],
       "env": {
         "COMFYUI_URL": "http://localhost:8188"
       }
@@ -24,9 +24,9 @@ Cursor connects to the MCP server via stdio. The server process is automatically
 
 **Important Notes:**
 
-- **Update the Path**: Replace `/path/to/comfyui-mcp-server-node/dist/server.js` with your actual absolute path:
-  - Windows: `"d:\\MyProg\\comfyui-mcp-server\\comfyui-mcp-server-node\\dist\\server.js"`
-  - Mac/Linux: `"/path/to/comfyui-mcp-server-node/dist/server.js"`
+- **Update the Path**: Replace `/path/to/comfyui-common-mcp/dist/server.js` with your actual absolute path:
+  - Windows: `"d:\\MyProg\\comfyui-mcp-server\\comfyui-common-mcp\\dist\\server.js"`
+  - Mac/Linux: `"/path/to/comfyui-common-mcp/dist/server.js"`
 - **Node.js Command**: You may need to use the full path to your Node.js executable
 - **ComfyUI URL**: The `COMFYUI_URL` environment variable should point to your ComfyUI instance (default: `http://localhost:8188`)
 - **Build First**: Make sure you've run `npm run build` before using stdio mode
@@ -36,7 +36,7 @@ Cursor connects to the MCP server via stdio. The server process is automatically
 1. Build the project:
 
    ```bash
-   cd comfyui-mcp-server-node
+   cd comfyui-common-mcp
    npm install
    npm run build
    ```

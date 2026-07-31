@@ -5,23 +5,27 @@ Thank you for your interest in contributing to ComfyUI MCP Server (Node.js/TypeS
 ## Development Setup
 
 1. **Clone the repository:**
+
    ```bash
    git clone <repo-url>
-   cd comfyui-mcp-server-node
+   cd comfyui-common-mcp
    ```
 
 2. **Install dependencies:**
+
    ```bash
    npm install
    ```
 
 3. **Start ComfyUI** (if not already running):
+
    ```bash
    cd <ComfyUI_dir>
    python main.py --port 8188
    ```
 
 4. **Build and run the server:**
+
    ```bash
    npm run build
    npm start
